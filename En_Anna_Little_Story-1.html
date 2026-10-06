@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>En Anna 🤍 | Our Little Story</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:"Trebuchet MS",Arial,sans-serif;background:linear-gradient(135deg,#fff4f8,#eaf8ff);color:#5a4650;overflow-x:hidden}
+#hearts span{position:fixed;bottom:-30px;font-size:22px;animation:float 7s linear infinite;opacity:.7;z-index:0}
+@keyframes float{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}
+.story{display:none;min-height:100vh;padding:30px 18px;align-items:center;justify-content:center;position:relative;z-index:1}
+.story.active{display:flex}
+.card{width:min(680px,100%);background:#ffffffec;border:3px solid #ffd4e4;border-radius:35px;padding:28px 22px;box-shadow:0 15px 45px #cdaebe55;text-align:center;animation:pop .55s ease}
+@keyframes pop{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+.bubu{font-size:74px;line-height:1;margin:8px 0 18px;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+h1{color:#d85d8d;font-size:30px;margin:10px 0 18px}
+h2{color:#d85d8d;font-size:25px}
+p{font-size:17px;line-height:1.75;margin:10px 0}
+.small{font-size:14px;color:#9b7b88}
+button{border:0;border-radius:30px;padding:13px 24px;margin:20px 6px 0;background:#e66d9d;color:white;font-size:16px;font-weight:bold;box-shadow:0 6px 15px #d66b9650}
+button:active{transform:scale(.96)}
+.tag{display:inline-block;background:#fff0f6;border-radius:20px;padding:7px 12px;margin:4px;font-size:14px}
+.wishes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+.wish{background:#f8f4ff;border-radius:18px;padding:13px}
+.envelope{font-size:90px;animation:shake 1.8s infinite}
+@keyframes shake{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-5deg)}90%{transform:rotate(5deg)}}
+.footer{font-size:13px;margin-top:18px;color:#a88794}
+</style>
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<section class="story active" id="p1"><div class="card">
+<div class="bubu">🐻‍❄️ 🫂 🐰</div>
+<h1>🪽 En Anna…<br>Enakku Kidaicha Oru Varam 🤍</h1>
+<p>Nee enakku blood relation illa…</p>
+<p>Aana sila uravugalukku<br>raththa sontham thevaiye illa. 🌷</p>
+<p>Manasula orutharukku oru idam kidaichiduchuna,<br>avanga namma sondham aagiduraanga.</p>
+<button onclick="next()">Our Story Starts ❤️</button>
+</div></section>
+
+<section class="story" id="p2"><div class="card">
+<div class="bubu">🐻‍❄️ 🌷 🐰</div>
+<h2>💗 Eppadi Indha Bond Vandhadhu?</h2>
+<p>Apdi en life-la vandhavan nee.</p>
+<p>En non-blooded anna…<br>Aana enakku, nee atha vida romba periya uravu. 🫂</p>
+<div><span class="tag">Blood relation illa</span><span class="tag">Aana heart relation 🤍</span></div>
+<button onclick="next()">Next 🌸</button>
+</div></section>
+
+<section class="story" id="p3"><div class="card">
+<div class="bubu">🐰 🍫 🐻‍❄️</div>
+<h2>🍫 “Enakku Enna Venum?”</h2>
+<p>Naan chocolate venumnu sonna vaangi tharuva. 🍫</p>
+<p>Enakku edhaavadhu venumnu sonna<br>“Enna venum?” nu ketpa.</p>
+<p>Naan cash ketta kooda, un kitta illa naalum<br>eppadiyaavadhu arrange panni help panna try pannuva. 🤍</p>
+<p>Because it was never just about what you gave me…<br>it was always about how much you cared about me. 🌷</p>
+<button onclick="next()">Next 🫶</button>
+</div></section>
+
+<section class="story" id="p4"><div class="card">
+<div class="bubu">🐻‍❄️ 👨‍👧 🐰</div>
+<h2>🫂 Anna Mattum Illa…</h2>
+<p><b>Sila neram</b> nee enakku anna.<br>
+<b>Sila neram</b> appa maari.<br>
+<b>Sila neram</b> friend maari.<br>
+<b>Sila neram</b> amma maari paasama. 🤍</p>
+<p>Aana ellaa nerathulayum…<br><b>“Naan irukken.”</b> nu sollama solli irundha oruthan nee. 🫶</p>
+<p>Un sandhoshamum, kovamum, kashtamum, thoughts-um en kitta share pannina andha urimai enakku romba special. 🌸</p>
+<button onclick="next()">Next 💕</button>
+</div></section>
+
+<section class="story" id="p5"><div class="card">
+<div class="bubu">🐻‍❄️ 😤 ➜ 🤍 🐰</div>
+<h2>🌧️ Unakku Kovam Vandhaalum…</h2>
+<p>Naan thappu panninaalum, nee kovapattalum…</p>
+<p>Un kovathukku pinnadiyum en mela irukkura paasam dhaan theriyum. 🤍</p>
+<p>Enna samadhanapadutha un ego-va kooda thalli vechiduva.</p>
+<p>Adhanala dhaan…<br>un kooda irukkura indha uravu enakku ordinary-a theriyave illa. 🌷</p>
+<button onclick="next()">Next 🪽</button>
+</div></section>
+
+<section class="story" id="p6"><div class="card">
+<div class="bubu">🪽 🐻‍❄️ ✨ 🐰 🪽</div>
+<h2>🪽 En Life-la Vandha Angel</h2>
+<p>Sila per namma life-la oru reason-oda varuvaanga.</p>
+<p>Aana sila per reason-e illaama vandhu,<br>namma life-oda oru reason-a maariduvaanga. ✨</p>
+<p><b>Enakku nee apdi vandha oruthan.</b></p>
+<p>My angel. 🪽</p>
+<p>Unna en life-la kidaichathukku naan romba blessed-ah feel panren. 🤍</p>
+<button onclick="next()">Next 🌙</button>
+</div></section>
+
+<section class="story" id="p7"><div class="card">
+<div class="bubu">🐰 🌙 🐻‍❄️</div>
+<h2>🌙 Oru Chinna Yekkam…</h2>
+<p>Namma kooda pirakkala. Adhanala naan nenacha nerathula unnai paakka mudiyala… pesa mudiyala… vilayada mudiyala.</p>
+<div class="wishes">
+<div class="wish">🏠 Ore room</div>
+<div class="wish">🛵 Bike ride</div>
+<div class="wish">🎬 Movie</div>
+<div class="wish">🍚 Ootti vidradhu</div>
+<div class="wish">🎈 Vilayattu</div>
+<div class="wish">😂 Sanda + Sirippu</div>
+</div>
+<p>Iva ellame chinna chinna vishayam dhaan…<br>aana enakku mattum romba periya kanavugal. 🌙</p>
+<button onclick="next()">Next 🧸</button>
+</div></section>
+
+<section class="story" id="p8"><div class="card">
+<div class="bubu">😂 🐰 🛵 🐻‍❄️</div>
+<h2>🥹 “Kooda Pirandhirundha…”</h2>
+<p>Sometimes I wish… nee enakku kooda pirandha annava irundhirundha eppadi irukkum?</p>
+<p>Daily sandai. 😂<br>Daily torture.<br>“Annaaa!” nu katharadhu.<br>Unna disturb pannradhu.</p>
+<p>Un kooda vilayadradhu, bike-la pogaradhu, movie-ku koopidradhu, ooru sutharadhu… 🛵🎬</p>
+<p>Maybe namma romba sanda poduvom…<br>Aana <b>“Avan en anna.”</b> nu solli marubadiyum un kooda vandhiruppen. 🫂</p>
+<button onclick="next()">Next 🌸</button>
+</div></section>
+
+<section class="story" id="p9"><div class="card">
+<div class="bubu">🌸 🐻‍❄️ 🏠 🐰 🌸</div>
+<h2>🌸 Next Jenmam…</h2>
+<p>If there is a next life…<br>Enakku perusa edhuvum venam.</p>
+<p><b>Nee mattum enakku kooda pirandha annava irukkanum. 🤍</b></p>
+<p>Same home. 🏠<br>Same fights. 😂<br>Same love. 🤍<br>Same life. 🌷</p>
+<p>No distance.<br>No waiting.<br>No “eppo paakkalam?”<br>No “eppo pesalam?”</p>
+<p><b>Just… Anna & Thangachi. 🫶</b></p>
+<button onclick="next()">Final Letter 💌</button>
+</div></section>
+
+<section class="story" id="p10"><div class="card">
+<div class="envelope">💌</div>
+<h2>🫶 En Anna-ku Oru Chinna Promise…</h2>
+<p>Namma kooda pirakkala. Adhanala un kooda kidaikka vendiya neraya moments kidaikkama poirukkalam…</p>
+<p>Aana adhunaala en paasam mattum kuraindhudathu. 🤍</p>
+<p>Nee en life-la vandha naal-la irundhu,<br>nee enakku oru relationship mattum illa…</p>
+<p><b>Oru feeling. Oru comfort. Oru safe place. Oru family. 🪽</b></p>
+<p>Oruvela next jenmam nu onnu irundha…<br>“Indha murai mattum nee enakku kooda pirandha annava vaa.” 🤍</p>
+<p>Aana indha jenmathula…<br><b>Nee enakku kidaichadhe enakku oru blessing. ✨</b></p>
+<p><b>Enakku nee eppovume “Anna” dhaan. 🫂</b></p>
+<p><b>Love you, Anna. 🫶<br>Eppovume un thangachi. 🌷</b></p>
+<div class="footer">Made with a little heart 🤍</div>
+</div></section>
+
+<script>
+let page=1;
+function next(){
+  document.getElementById("p"+page).classList.remove("active");
+  page++;
+  document.getElementById("p"+page).classList.add("active");
+  window.scrollTo(0,0);
+}
+for(let i=0;i<18;i++){
+  const s=document.createElement("span");
+  s.textContent=["♡","♥","🌸","✨"][i%4];
+  s.style.left=(Math.random()*100)+"%";
+  s.style.animationDelay=(Math.random()*6)+"s";
+  s.style.animationDuration=(5+Math.random()*5)+"s";
+  document.getElementById("hearts").appendChild(s);
+}
+</script>
+</body>
+</html>
